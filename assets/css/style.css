@@ -1763,3 +1763,74 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/*--------------------------------------------------------------
+# cookie
+--------------------------------------------------------------*/
+
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: #2a2c39;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+  flex: 1 1 300px;
+}
+
+.cookie-banner a {
+  color: #ef6603;
+  text-decoration: underline;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-banner button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cookie-banner button#accept-cookies {
+  background-color: #ef6603;
+  color: #fff;
+}
+
+.cookie-banner button#accept-cookies:hover {
+  background-color: #d85b00;
+}
+
+.cookie-banner button.reject {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cookie-banner button.reject:hover {
+  background-color: #444;
+  border-color: #ef6603;
+  color: #ef6603;
+}
