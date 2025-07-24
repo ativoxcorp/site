@@ -171,22 +171,20 @@
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
+$('.testimonials-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  dots: true,
+  nav: true, // Ativa as setas
+  navText: ['<i class="las la-chevron-left"></i>', '<i class="las la-chevron-right"></i>'],
+  responsive: {
+    0: { items: 1 },
+    768: { items: 2 },
+    992: { items: 3 }
+  }
+});
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
